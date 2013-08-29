@@ -8,7 +8,8 @@ using System.Configuration;
 namespace Maticsoft.DBUtility
 {
 	/// <summary>
-    /// 数据访问基础类(基于Oracle) Copyright (C) Maticsoft
+    /// Copyright (C) Maticsoft
+	/// 数据访问基础类(基于Oracle)
 	/// 可以用户可以修改满足自己项目的需要。
 	/// </summary>
 	public abstract class DbHelperOra

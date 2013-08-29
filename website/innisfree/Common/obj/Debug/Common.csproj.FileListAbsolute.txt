@@ -1,0 +1,9 @@
+E:\innisfree\website\innisfree\Common\bin\Debug\Maticsoft.Common.dll
+E:\innisfree\website\innisfree\Common\bin\Debug\Maticsoft.Common.pdb
+E:\innisfree\website\innisfree\Common\bin\Debug\COM.Excel.dll
+E:\innisfree\website\innisfree\Common\bin\Debug\Excel.dll
+E:\innisfree\website\innisfree\Common\bin\Debug\OpenSmtp.dll
+E:\innisfree\website\innisfree\Common\bin\Debug\OWC10Chart.dll
+E:\innisfree\website\innisfree\Common\obj\Debug\ResolveAssemblyReference.cache
+E:\innisfree\website\innisfree\Common\obj\Debug\Maticsoft.Common.dll
+E:\innisfree\website\innisfree\Common\obj\Debug\Maticsoft.Common.pdb

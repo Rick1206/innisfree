@@ -6,10 +6,6 @@
 <HTML>
 	<HEAD>
 		<title>modify</title>
-		
-		
-		
-		
 		<LINK href="../../style.css" type="text/css" rel="stylesheet">
 		<script language="javascript">
 		function imgchang()

@@ -1,22 +1,20 @@
 ﻿using System.Data;
-using Maticsoft.IDAL;
 using Maticsoft.Model;
 namespace Maticsoft.BLL
 {
 	/// <summary>
-	/// SysManage 的摘要说明。
+	/// 系统菜单管理。
 	/// </summary>
 	public class SysManage
 	{
-        //从工厂里面创建产品类的数据访问对象        
-        ISysManage dal = DALFactory.DataAccess.CreateSysManage();
+		Maticsoft.DAL.SysManage dal=new Maticsoft.DAL.SysManage();
 
+        
 		public SysManage()
-		{
-        }
-
-        #region 基本方法
-        public int AddTreeNode(SysNode node)
+		{			
+		}
+		
+		public int AddTreeNode(SysNode node)
 		{			
 			return dal.AddTreeNode(node);
 		}
@@ -28,16 +26,21 @@ namespace Maticsoft.BLL
 		{			
 			dal.DelTreeNode(nodeid);
 		}
+
 		public DataSet GetTreeList(string strWhere)
 		{			
 			return dal.GetTreeList(strWhere);
 		}
+
 		public SysNode GetNode(int NodeID)
 		{			
 			return dal.GetNode(NodeID);
-        }
+		}
 
-        #endregion
+        public int GetPermissionCatalogID(int permissionID)
+        {
+            return dal.GetPermissionCatalogID(permissionID);
+        }
 
         #region 日志管理
         public void AddLog(string time,string loginfo,string Particular)

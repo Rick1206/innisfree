@@ -10,20 +10,17 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using LTP.Accounts.Bus;
 using System.Configuration;
-
 namespace Maticsoft.Web.Accounts
 {
 	/// <summary>
 	/// usermodify 的摘要说明。
 	/// </summary>
 	public partial class usermodify : System.Web.UI.Page
-	{
-	
+	{	
 		protected void Page_Load(object sender, System.EventArgs e)
 		{
 			if (!Page.IsPostBack) 
-			{
-				
+			{			
 
 				if (Context.User.Identity.IsAuthenticated)
 				{					
@@ -57,13 +54,8 @@ namespace Maticsoft.Web.Accounts
 
 					this.dropStyle.SelectedIndex=currentUser.Style-1;
 
-//					BindRoles(user);
-
-					
+//					BindRoles(user);					
 				}
-
-
-
 			}
 
 		}

@@ -1,0 +1,5 @@
+E:\innisfree\website\innisfree\Model\bin\Debug\Maticsoft.Model.dll
+E:\innisfree\website\innisfree\Model\bin\Debug\Maticsoft.Model.pdb
+E:\innisfree\website\innisfree\Model\obj\Debug\ResolveAssemblyReference.cache
+E:\innisfree\website\innisfree\Model\obj\Debug\Maticsoft.Model.dll
+E:\innisfree\website\innisfree\Model\obj\Debug\Maticsoft.Model.pdb
