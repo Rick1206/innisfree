@@ -75,6 +75,10 @@
   <ItemGroup>
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
+    <Content Include="css\bak\innisfree.css" />
+    <Content Include="css\bak\jscrollpane.css" />
+    <Content Include="css\bak\reset.css" />
+    <Content Include="css\bak\Style.css" />
     <Content Include="css\innisfree.css" />
     <Content Include="css\jscrollpane.css" />
     <Content Include="css\reset.css" />
@@ -98,6 +102,7 @@
     <Content Include="Login.aspx" />
     <Content Include="swf\CuPlayerMiniV20_Gray_S.swf" />
     <Content Include="swf\CuPlayerMiniV3_Black_S.swf" />
+    <Content Include="video\innisfree.flv" />
     <Content Include="video\video1.flv" />
     <Content Include="Web.config" />
   </ItemGroup>
