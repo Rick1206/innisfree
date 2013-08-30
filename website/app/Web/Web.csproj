@@ -75,6 +75,9 @@
   <ItemGroup>
     <Content Include="Controls\checkright.ascx" />
     <Content Include="Controls\copyright.ascx" />
+    <Content Include="css\innisfree.css" />
+    <Content Include="css\jscrollpane.css" />
+    <Content Include="css\reset.css" />
     <Content Include="data\innisfree.accdb" />
     <Content Include="Global.asax" />
     <Content Include="img\bg1.jpg" />

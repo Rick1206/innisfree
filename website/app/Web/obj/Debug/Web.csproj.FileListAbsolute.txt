@@ -53,8 +53,6 @@ E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.SysManage.treelist.resource
 E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.Admin.toindex.resources
 E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.Admin.Top.resources
 E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.Global.resources
-E:\innisfree\website\app\Web\obj\Debug\GenerateResource.read.1.tlog
-E:\innisfree\website\app\Web\obj\Debug\GenerateResource.write.1.tlog
 E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.dll
 E:\innisfree\website\app\Web\obj\Debug\Maticsoft.Web.pdb
 E:\innisfree\website\app\Web\obj\Debug\ResGen.read.1.tlog

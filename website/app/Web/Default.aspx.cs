@@ -12,8 +12,6 @@ using NetDimension.Weibo;
 using NetDimension.Web;
 using System.IO;
 using System.Drawing;
-//using System.Web.UI.WebControls.Image;  
-
 
 
 namespace Maticsoft.Web
@@ -29,21 +27,22 @@ namespace Maticsoft.Web
 
         public const string AppKey = "3954533200";
         public const string AppSecret = "f5e28ee4709f9423fc47a20d606169a9";
-        public const string CallbackUrl = "http://localhost:50970/Default.aspx";
+        public const string CallbackUrl = "http://foundation.showone.com.cn/Default.aspx";
 
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
-                string cusCallbackUrl = CallbackUrl + "?point=1";
-                OAuth oauth = new NetDimension.Weibo.OAuth(AppKey, AppSecret, cusCallbackUrl);
+                //string cusCallbackUrl = CallbackUrl + "?point=1";
+            //Response.Write(Server.MapPath("") + "\\images\\bg1.jpg");
+            OAuth oauth = new NetDimension.Weibo.OAuth(AppKey, AppSecret, CallbackUrl);
 
                 if (Session["Token"] != null)
                 {
                     string token = (string)Session["Token"];
                     OAuth newoauth = new OAuth(AppKey, AppSecret, token, "");
 
+                    Sina = new Client(newoauth);
                     UserID = Sina.API.Account.GetUID();
                     NetDimension.Weibo.Entities.user.Entity userInfo = Sina.API.Users.Show(UserID, null);
                     UserName = userInfo.ScreenName;
@@ -63,8 +62,7 @@ namespace Maticsoft.Web
 
                         AccessToken accessToken = oauth.GetAccessTokenByAuthorizationCode(mycode);
 
-
-                        NetDimension.Weibo.Client Sina = new NetDimension.Weibo.Client(oauth);
+                        Sina = new NetDimension.Weibo.Client(oauth);
                         String UserID = Sina.API.Account.GetUID();
                         Session["wid"] = UserID;
 
@@ -112,15 +110,14 @@ namespace Maticsoft.Web
          protected void LinkButton1_Click(object sender, EventArgs e)
          {
 
-            Response.Write( GetBytesByImagePath("E:/innisfree/innisfree/img/bg1.jpg"));
-
+            //Response.Write( GetBytesByImagePath("/img/bg1.jpg"));
 
              if (Session["Token"] == null)
              {
 
-                 string cusCallbackUrl = CallbackUrl + "?point=1";
+                 //string cusCallbackUrl = CallbackUrl + "?point=1";
 
-                 OAuth myoauth = new NetDimension.Weibo.OAuth(AppKey, AppSecret, cusCallbackUrl);
+                 OAuth myoauth = new NetDimension.Weibo.OAuth(AppKey, AppSecret, CallbackUrl);
 
                  String authUrl = myoauth.GetAuthorizeURL(ResponseType.Code, null, DisplayType.Default);
                  
@@ -129,19 +126,18 @@ namespace Maticsoft.Web
              }
              else
              {
-                 Sina = new Client(new OAuth(ConfigurationManager.AppSettings["AppKey"], ConfigurationManager.AppSettings["AppSecret"], cookie["AccessToken"], null)); 
+
+                 Sina = new Client(new OAuth(AppKey, AppSecret, Session["Token"].ToString(), null)); 
                  //用cookie里的accesstoken来实例化OAuth，这样OAuth就有操作权限了
 
                  UserID = Sina.API.Account.GetUID();
                  string weiboContent = "想让韩国国宝级彩妆大师朴泰轮教你如何打造少女肌肤吗？现在观看#人人都爱少女肌肤#教学视频就能从#innisfree#这里学到少女肌肤的底妆秘籍，还有机会赢取#悦诗风吟矿物质纯安动人粉底膏#哦！立刻猛击";
 
-                
+                 string jpgPath = Server.MapPath("") + "\\img\\bg1.jpg";
 
+                 Sina.API.Statuses.Upload(weiboContent, GetBytesByImagePath(jpgPath));
 
-                 //Sina.API.Statuses.Upload(weiboContent,"img/bg1.jpg");
-                    //Sina.API.Statuses.Upload("1",
-
-                 Sina.API.Statuses.Update(weiboContent);
+                 //Sina.API.Statuses.Update(weiboContent);
 
              }
 

@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Maticsoft.Web.Default" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns:wb=“http://open.weibo.com/wb”>
 <head runat="server">
     <title>首页</title>
     <meta charset="UTF-8">
@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/Scrolling.Scrollbar.js"></script>
 	<script type="text/javascript" src="js/Scrolling.ScrollTween.js"></script>
     <script type="text/javascript" src="js/swfobject_flv.js"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
         var scroller = null;
         var scrollbar = null;
@@ -61,7 +62,11 @@
 		<div class="bg5">
 			
 		</div>
-		<div class="bg6"></div>
+		<div class="bg6">
+        <div class="weibowall">
+        <wb:livestream skin="silver" topic="%E4%BA%BA%E4%BA%BA%E9%83%BD%E7%88%B1%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4|%E4%BA%BA%E4%BA%BA%E9%83%BD%E7%88%B1%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4" width="auto" height="250" ></wb:livestream>
+        </div>
+        </div>
 	</div>
     </form>
     <script type="text/javascript">
