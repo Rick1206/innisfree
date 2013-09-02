@@ -128,7 +128,7 @@
 				<div class="Container">
 					<div id="Scroller-3">
 						<div class="Scroller-Container">
-							<a target="_blank" href="http://www.innisfree.cn/Product.do?method=productView&seq=1000002880"><img src="img/kol_text3.png" alt="" /></a>
+							<a target="_blank" href="http://weibo.com/1660235667/A6Rperjao"><img src="img/kol_text3.png" alt="" /></a>
 						</div>
 					</div>
 				</div>
@@ -154,6 +154,9 @@
 				</div>
 			</div>
 		</div>
+
+        <wb:livestream skin="silver" topic="%E4%BA%BA%E4%BA%BA%E9%83%BD%E7%88%B1%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4|%E4%BA%BA%E4%BA%BA%E9%83%BD%E7%88%B1%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4" width="auto" height="500" ></wb:livestream>
+
     </form>
     <script type="text/javascript">
         $(function () {
