@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/Scrolling.Scrollbar.js"></script>
 	<script type="text/javascript" src="js/Scrolling.ScrollTween.js"></script>
     <script type="text/javascript" src="js/swfobject_flv.js"></script>
+    <script src="http://js.t.sinajs.cn/t4/enterprise/js/public/appframe/appClient.js" type="text/javascript"></script>
     <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
 		var scroller  = null;
@@ -160,25 +161,6 @@
     </form>
     <script type="text/javascript">
         $(function () {
-//            var so = new SWFObject("swf/CuPlayerMiniV20_Gray_S.swf", "video_area", "404", "304", "9", "#ffffff");
-//            so.addParam("allowfullscreen", "true");
-//            so.addParam("allowscriptaccess", "always");
-//            so.addParam("wmode", "opaque");
-//            so.addParam("quality", "high");
-//            so.addParam("salign", "lt");
-//            so.addVariable("CuPlayerImage", "");
-//            so.addVariable("CuPlayerShowImage", "false");
-//            so.addVariable("CuPlayerWidth", "404");
-//            so.addVariable("CuPlayerHeight", "304");
-//            so.addVariable("CuPlayerAutoPlay", "true");
-//            so.addVariable("CuPlayerAutoRepeat", "true");
-//            so.addVariable("CuPlayerShowControl", "true");
-//            so.addVariable("CuPlayerAutoHideControl", "false");
-//            so.addVariable("CuPlayerAutoHideTime", "6");
-//            so.addVariable("CuPlayerVolume", "50");
-//            so.addVariable("CuPlayerGetNext", "true");
-//            so.addVariable("CuPlayerFile", "/video/video1.flv");
-//            so.write("videocontent");
 
             $(".btn4").click(function () {
                 if (!checkMobile($(".mobile").val())) {
