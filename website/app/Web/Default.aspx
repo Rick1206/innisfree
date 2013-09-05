@@ -42,8 +42,14 @@
 			<a href="http://www.innisfree.cn/Product.do?method=productView&seq=1000002880" class="btn1" target="_blank"><img src="img/buyrn.png" alt="立即购买" /></a>
 		</div>
 		<div class="bg2">
-			<asp:LinkButton ID="LinkButton1" runat="server" class="btn2" 
+
+			<asp:LinkButton ID="LinkButton1" runat="server" style="display:none"
                 onclick="LinkButton1_Click"><img src="img/share.png" alt="" /></asp:LinkButton>
+
+                 <a class="btn2" href="javascript:;"> 
+                    <wb:share-button appkey="6nj1i8" addition="simple" type="button" default_text="%E6%83%B3%E8%AE%A9%E9%9F%A9%E5%9B%BD%E5%9B%BD%E5%AE%9D%E7%BA%A7%E5%BD%A9%E5%A6%86%E5%A4%A7%E5%B8%88%E6%9C%B4%E6%B3%B0%E8%BD%AE%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E6%89%93%E9%80%A0%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4%E5%90%97%EF%BC%9F%E7%8E%B0%E5%9C%A8%E8%A7%82%E7%9C%8B%23%E4%BA%BA%E4%BA%BA%E9%83%BD%E7%88%B1%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4%23%E6%95%99%E5%AD%A6%E8%A7%86%E9%A2%91%E5%B0%B1%E8%83%BD%E4%BB%8E%23innisfree%23%E8%BF%99%E9%87%8C%E5%AD%A6%E5%88%B0%E5%B0%91%E5%A5%B3%E8%82%8C%E8%82%A4%E7%9A%84%E5%BA%95%E5%A6%86%E7%A7%98%E7%B1%8D%EF%BC%8C%E8%BF%98%E6%9C%89%E6%9C%BA%E4%BC%9A%E8%B5%A2%E5%8F%96%23%E6%82%A6%E8%AF%97%E9%A3%8E%E5%90%9F%E7%9F%BF%E7%89%A9%E8%B4%A8%E7%BA%AF%E5%AE%89%E5%8A%A8%E4%BA%BA%E7%B2%89%E5%BA%95%E8%86%8F%23%E5%93%A6%EF%BC%81%E7%AB%8B%E5%88%BB%E7%8C%9B%E5%87%BB" pic="http%3A%2F%2Ffoundation.showone.com.cn%2Fimg%2Fbg1.jpg"></wb:share-button>
+                </a>
+
 			<div class="video">
 				<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="FlvPlay1" align="middle">
 				<param name="movie" value="swf/innisfree.swf" />
