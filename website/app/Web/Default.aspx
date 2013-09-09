@@ -174,6 +174,25 @@
                 }
             });
 
+            (function () {
+                var _w = , _h = 35;
+                var param = {
+                    url: "http://e.weibo.com/2367460622/",
+                    type: '5',
+                    count: '0', /**是否显示分享数，1显示(可选)*/
+                    appkey: '3954533200', /**您申请的应用appkey,显示分享来源(可选)*/
+                    title: '想让韩国国宝级彩妆大师朴泰轮教你如何打造少女肌肤吗？现在观看#人人都爱少女肌肤#教学视频就能从#innisfree#这里学到少女肌肤的底妆秘籍，还有机会赢取#悦诗风吟矿物质纯安动人粉底膏#哦！@Innisfree悦诗风吟 立刻猛击', /**分享的文字内容(可选，默认为所在页面的title)*/
+                    pic: 'http://foundation.showone.com.cn/img/bg1.jpg', /**分享图片的路径(可选)*/
+                    ralateUid: '', /**关联用户的UID，分享微博会@该用户(可选)*/
+                    language: 'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                    rnd: new Date().valueOf()
+                }
+                var temp = [];
+                for (var p in param) {
+                    temp.push(p + '=' + encodeURIComponent(param[p] || ''))
+                }
+                $(".btn2").html('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="' + _w + '" height="' + _h + '"></iframe>');
+            })()
 
         });
 
@@ -185,7 +204,11 @@
             } else {
                  return true;
             }
-         } 
+         }
+
+
+         
+
 
      </script>
 
