@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userlist.aspx.cs" Inherits="Maticsoft.Web.userlist" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableEventValidation = "false"  CodeBehind="userlist.aspx.cs" Inherits="Maticsoft.Web.userlist" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+    <asp:Panel ID="Panel1" runat="server" Width="100%">
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
             AllowSorting="True" AutoGenerateColumns="False" BackColor="White" 
             BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" 
@@ -39,6 +40,9 @@
             DataFile="~/data/innisfree.mdb" onselecting="AccessDataSource1_Selecting" 
             SelectCommand="SELECT [uname], [usex], [uage], [wid], [uphone], [uemail], [wname], [parameter1], [parameter2], [ID] FROM [userinfo] ORDER BY [ID] DESC">
         </asp:AccessDataSource>
+        </asp:Panel>
+        <asp:Button ID="Button1" runat="server" onclick="Button1_Click" 
+            Text="导出Excel" />
     </div>
     </form>
 </body>

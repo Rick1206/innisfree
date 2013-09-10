@@ -34,6 +34,19 @@
 		  scrollbar3 = new Scrolling.Scrollbar(document.getElementById("Scrollbar-Container3"), scroller3, new Scrolling.ScrollTween());
 		}	
 	</script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-43877737-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -173,6 +186,10 @@
                     return false;
                 }
             });
+
+//            $(".btn2").click(function(){
+//                 _gaq.push(['_trackEvent', 'homepage', 'click', 'share-video-to-weibo']);
+//            });
 
             (function () {
                 var _w = , _h = 35;
